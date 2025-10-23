@@ -35,16 +35,16 @@ function App() {
                   as a developer. Let’s build something amazing together!
                 </motion.p>
 
+                <Link to="/projects" style={{ textDecoration: "none", color: "inherit" }}>
                 <motion.button
                   initial={{ opacity: 0, scale: 0.8 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.5, duration: 0.6 }}
                   className="welcome-button"
                 >
-                  <Link to="/projects" style={{ textDecoration: "none", color: "inherit" }}>
                     View My Work
-                  </Link>
                 </motion.button>
+                </Link>
 
               </div>
             }
