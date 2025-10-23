@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "./Header";
 import About from "./About";
