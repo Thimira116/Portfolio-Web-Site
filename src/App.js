@@ -1,5 +1,5 @@
 import React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Header from "./Header";
 import About from "./About";
@@ -41,8 +41,11 @@ function App() {
                   transition={{ delay: 1.5, duration: 0.6 }}
                   className="welcome-button"
                 >
-                  View My Work
+                  <Link to="/projects" style={{ textDecoration: "none", color: "inherit" }}>
+                    View My Work
+                  </Link>
                 </motion.button>
+
               </div>
             }
           />
