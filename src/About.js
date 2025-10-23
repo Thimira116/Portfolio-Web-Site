@@ -1,0 +1,54 @@
+import React from "react";
+import { motion } from "framer-motion";
+import "./App.css";
+import profilePic from "./assets/profile.jpg";
+
+function About() {
+  return (
+    <div className="about-page">
+      <motion.div
+        className="about-container"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        {/*Profile photo (optional)*/}
+        {<motion.img
+          src={profilePic}
+          alt="Thimira Savinda"
+          className="about-photo"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.3, duration: 0.8 }}
+        />}
+
+        <motion.div
+          className="about-text"
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <h1 className="about-title">About Me</h1>
+          <p className="about-intro">
+            Hi, I’m <strong>Thimira Savinda</strong> — a web developer passionate
+            about building modern, responsive, and creative websites using
+            <strong> React.js</strong>, <strong>PHP</strong>, and <strong>MySQL</strong>.
+          </p>
+          <div className="about-info">
+            <h1>Education</h1>
+
+            <p><strong>School:</strong> WP/MT Meril Kariyawasam National College - Meegahatenna</p>
+            <p><strong>Student at:</strong> Sri Lanka Institute Of Advance Technological Education  - Galle</p>
+            <p><strong>Department:</strong> Information Technology (HNDIT)</p>
+          </div>
+          <p className="about-extra">
+            I’m currently exploring new web technologies and love turning creative ideas into
+            smooth and interactive web experiences.
+          </p>
+        </motion.div>
+      </motion.div>
+    </div>
+  );
+}
+
+export default About;

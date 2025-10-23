@@ -1,38 +1,440 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* 🌈 Background and layout */
+.welcome-container {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background: linear-gradient(135deg, #007bff, #6f42c1);
   color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+/* ✨ Title animation and style */
+.welcome-title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
-@keyframes App-logo-spin {
+/* 💬 Subtitle / text style */
+.welcome-text {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+  margin: 0 auto;
+  color: #f3f3f3;
+}
+
+/* 🎯 Modern animated button */
+.welcome-button {
+  margin-top: 30px;
+  padding: 12px 28px;
+  background: white;
+  color: #6f42c1;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.welcome-button:hover {
+  transform: scale(1.05);
+  background: #f8f9fa;
+}
+
+/* 🌟 Smooth entry fade animation (optional extra effect) */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
+    transform: translateY(30px);
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
+
+.welcome-container {
+  animation: fadeIn 1.5s ease;
+}
+
+/* =========================
+   🌟 Header Styles
+   ========================= */
+/* Header.css */
+
+/* Header Layout */
+.portfolio-header {
+  background-color: #0a0a23;
+  color: white;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.logo span {
+  color: #007bff;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Hamburger Menu (hidden on desktop) */
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #0a0a23;
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .nav-links.open {
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  /* Animate bars into X when open */
+  .bar.open:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .bar.open:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+
+/* =========================
+   🌟 About Page Styles
+   ========================= */
+
+.about-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #6f42c1, #007bff);
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Optional photo styling */
+.about-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 25px;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Text content */
+.about-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.about-intro {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #f1f1f1;
+  margin-bottom: 20px;
+}
+
+.about-info {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.about-extra {
+  font-size: 1.05rem;
+  margin-top: 20px;
+  color: #e2e2e2;
+}
+
+/* Subtle animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   🌟 Contact Page Styles
+   ========================= */
+
+/* contact.css */
+
+/* 🌈 Full-page gradient container with flex centering */
+.contact-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #6f42c1, #007bff);
+  padding: 20px;
+  overflow: hidden;
+  animation: fadeIn 1.5s ease;
+}
+
+/* ✨ Contact card with glassy effect */
+.contact-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  max-width: 450px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Card title */
+.contact-title {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Card paragraph */
+.contact-text {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+/* Social links container */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Social icons */
+.social-icon img {
+  width: 45px;
+  height: 45px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0) invert(1);
+}
+
+.social-icon img:hover {
+  transform: scale(1.2);
+  filter: brightness(1) invert(0);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .contact-card {
+    padding: 30px 20px;
+  }
+
+  .social-icon img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
+
+/* =========================
+   🌟 Projects Page Styles
+   ========================= */
+
+.projects-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #007bff, #6f42c1);
+  color: white;
+  text-align: center;
+}
+
+.projects-title {
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Cards container */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual project card */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-height: 220px;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Card content */
+.project-card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.project-card-desc {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.project-card-link {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: white;
+  color: #6f42c1;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: auto;
+}
+
+.project-card-link:hover {
+  background: #f1f1f1;
+  transform: scale(1.05);
+}
+
