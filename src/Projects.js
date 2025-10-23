@@ -6,17 +6,17 @@ const projects = [
   {
     title: "Portfolio Website",
     description: "A personal portfolio website built with React.js and CSS.",
-    link: "https://github.com/Thimira116",
+    link: "https://github.com/Thimira116/Portfolio-Web-Site",
   },
   {
     title: "Travel Management Website",
     description: "An online travel giude website built using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.",
-    link: "https://github.com/Thimira116",
+    link: "https://github.com/Thimira116/Lakvisit-Travelling-Web-Site",
   },
   {
     title: "Mr Cushion Website",
     description: "A website with booking and user feedbacks website built using HTML, CSS, Java Script, PHP and My SQL.",
-    link: "https://github.com/Thimira116",
+    link: "https://github.com/Thimira116/mr_cushion",
   },
   // Add more projects here
 ];
