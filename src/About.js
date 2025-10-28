@@ -37,9 +37,13 @@ function About() {
           <div>
             <h1>Education</h1>
 
-            <p><strong>School:</strong> WP/MT Meril Kariyawasam National College - Meegahatenna</p>
             <p><strong>Student at:</strong> Sri Lanka Institute Of Advance Technological Education  - Galle</p>
-            <p><strong>Department:</strong> Information Technology (HNDIT)</p>
+            <p><strong>Department:</strong> Information Technology (HNDIT 2024- Present)</p>
+
+            <h1>Qualifications</h1>
+
+            <p><strong>Diploma in</strong> English Language and Literature (Aquinas College of Higher Studies 2024-2025)</p>
+
 
             {/* Skills Section */}
             <div className="skills-section">
