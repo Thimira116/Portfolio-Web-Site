@@ -34,13 +34,30 @@ function About() {
             about building modern, responsive, and creative websites using
             <strong> React.js</strong>, <strong>PHP</strong>, and <strong>MySQL</strong>.
           </p>
-          <div className="about-info">
+          <div>
             <h1>Education</h1>
 
             <p><strong>School:</strong> WP/MT Meril Kariyawasam National College - Meegahatenna</p>
             <p><strong>Student at:</strong> Sri Lanka Institute Of Advance Technological Education  - Galle</p>
             <p><strong>Department:</strong> Information Technology (HNDIT)</p>
+
+            {/* Skills Section */}
+            <div className="skills-section">
+              <h1>Web Design Skills</h1>
+
+              <div className="skills-logos">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" title="HTML" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" title="CSS" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React.js" title="React.js" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" title="Bootstrap" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" title="PHP" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" />
+
+              </div>
+            </div>
           </div>
+
           <p className="about-extra">
             I’m currently exploring new web technologies and love turning creative ideas into
             smooth and interactive web experiences.
