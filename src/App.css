@@ -189,6 +189,7 @@
   padding: 40px 20px;
 }
 
+/* Main container */
 .about-container {
   display: flex;
   flex-direction: column;
@@ -203,7 +204,7 @@
   animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Optional photo styling */
+/* Profile photo */
 .about-photo {
   width: 160px;
   height: 160px;
@@ -214,7 +215,7 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
-/* Text content */
+/* Titles & text */
 .about-title {
   font-size: 2.5rem;
   margin-bottom: 20px;
@@ -228,16 +229,10 @@
   margin-bottom: 20px;
 }
 
-.about-info {
-  background: rgba(255, 255, 255, 0.15);
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
+.about-info h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
   color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .about-info p {
@@ -252,6 +247,38 @@
   color: #e2e2e2;
 }
 
+/* === Skills section === */
+.skills-section {
+  margin-top: 20px;
+}
+
+.skills-section h1 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.skills-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.skills-logos img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.95);
+}
+
+.skills-logos img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
 /* Subtle animations */
 @keyframes fadeIn {
   from {
@@ -263,6 +290,71 @@
     transform: translateY(0);
   }
 }
+
+/* === RESPONSIVE DESIGN === */
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .about-container {
+    padding: 30px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-photo {
+    width: 140px;
+    height: 140px;
+  }
+
+  .about-info {
+    max-width: 500px;
+  }
+
+  .skills-logos img {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Mobile (≤ 600px) */
+@media (max-width: 600px) {
+  .about-page {
+    padding: 20px 10px;
+  }
+
+  .about-container {
+    padding: 25px 15px;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-intro,
+  .about-extra,
+  .about-info p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .about-info {
+    padding: 15px;
+    max-width: 100%;
+  }
+
+  .skills-logos {
+    gap: 10px;
+  }
+
+  .skills-logos img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
 
 /* =========================
    🌟 Contact Page Styles
