@@ -4,6 +4,7 @@ import "./App.css";
 import PortfolioImg from "./assets/Portfolio.png";
 import LakvisitImg from "./assets/Lakvisit.png";
 import MrCushionImg from "./assets/MrCushion.png";
+import POSImg from "./assets/POS.png";
 
 
 const projects = [
@@ -24,6 +25,12 @@ const projects = [
     description: "A website with booking and user feedbacks website built using HTML, CSS, Java Script, PHP and My SQL.",
     link: "https://github.com/Thimira116/mr_cushion",
     image: MrCushionImg,
+  },
+  {
+    title: "POS System",
+    description: "POS System for grocery shop to manage their bills and Inventory using Python language.",
+    link: "https://github.com/Thimira116/POS-System",
+    image: POSImg,
   },
   // Add more projects here
 ];
