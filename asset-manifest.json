@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/Portfolio-Web-Site/static/css/main.fe3f779b.css",
-    "main.js": "/Portfolio-Web-Site/static/js/main.745ccfab.js",
+    "main.css": "/Portfolio-Web-Site/static/css/main.5bb39685.css",
+    "main.js": "/Portfolio-Web-Site/static/js/main.57da1c48.js",
     "static/js/453.f635793e.chunk.js": "/Portfolio-Web-Site/static/js/453.f635793e.chunk.js",
     "static/media/Lakvisit.png": "/Portfolio-Web-Site/static/media/Lakvisit.a8258de2b5fda967c17e.png",
+    "static/media/Bus.png": "/Portfolio-Web-Site/static/media/Bus.5f8e67997263fea4045e.png",
     "static/media/Portfolio.png": "/Portfolio-Web-Site/static/media/Portfolio.2b4b0f5cf1aa60e0f8cc.png",
     "static/media/POS.png": "/Portfolio-Web-Site/static/media/POS.823aa769703c73a2a89a.png",
+    "static/media/WPOS.png": "/Portfolio-Web-Site/static/media/WPOS.35496f02b197e547a039.png",
     "static/media/MrCushion.png": "/Portfolio-Web-Site/static/media/MrCushion.26f324c21fbbcd73e40c.png",
     "static/media/profile.jpg": "/Portfolio-Web-Site/static/media/profile.10393f4c4a05671be2d9.jpg",
     "index.html": "/Portfolio-Web-Site/index.html",
-    "main.fe3f779b.css.map": "/Portfolio-Web-Site/static/css/main.fe3f779b.css.map",
-    "main.745ccfab.js.map": "/Portfolio-Web-Site/static/js/main.745ccfab.js.map",
+    "main.5bb39685.css.map": "/Portfolio-Web-Site/static/css/main.5bb39685.css.map",
+    "main.57da1c48.js.map": "/Portfolio-Web-Site/static/js/main.57da1c48.js.map",
     "453.f635793e.chunk.js.map": "/Portfolio-Web-Site/static/js/453.f635793e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe3f779b.css",
-    "static/js/main.745ccfab.js"
+    "static/css/main.5bb39685.css",
+    "static/js/main.57da1c48.js"
   ]
 }
