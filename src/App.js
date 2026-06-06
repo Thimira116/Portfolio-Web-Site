@@ -11,49 +11,96 @@ function App() {
   return (
     <HashRouter>
       <Header />
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <div className="welcome-container">
-                <motion.h1
-                  initial={{ opacity: 0, y: -50 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1 }}
-                  className="welcome-title"
-                >
-                  👋 Welcome to My Portfolio
-                </motion.h1>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <main className="home-page">
+              <section className="hero-section">
+                <div className="hero-copy">
+                  <motion.span
+                    initial={{ opacity: 0, y: -10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.6 }}
+                    className="hero-label"
+                  >
+                    Full-stack Developer
+                  </motion.span>
 
-                <motion.p
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 0.8, duration: 1 }}
-                  className="welcome-text"
-                >
-                  Explore my work, skills, and projects that showcase my journey
-                  as a developer. Let’s build something amazing together!
-                </motion.p>
+                  <motion.h1
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1, duration: 0.7 }}
+                    className="hero-title"
+                  >
+                    Developing reliable web logic and ensuring software quality.
+                  </motion.h1>
 
-                <Link to="/projects" style={{ textDecoration: "none", color: "inherit" }}>
-                <motion.button
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  <motion.p
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2, duration: 0.7 }}
+                    className="hero-description"
+                  >
+                    I combine backend development using PHP and MySQL 
+                    with a strong eye for web design and Quality Assurance. 
+                    I don't just build web applications—I focus on testing them 
+                    thoroughly to deliver clean, bug-free user experiences. 
+                    Actively seeking intern opportunities.
+                  </motion.p>
+
+                  <div className="hero-actions">
+                    <Link to="/projects" className="primary-button">
+                      View Projects
+                    </Link>
+                    <Link to="/contact" className="secondary-button">
+                      Contact Me
+                    </Link>
+                  </div>
+                </div>
+
+                <motion.div
+                  className="hero-card"
+                  initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 1.5, duration: 0.6 }}
-                  className="welcome-button"
+                  transition={{ delay: 0.3, duration: 0.7 }}
                 >
-                    View My Work
-                </motion.button>
-                </Link>
+                  <p className="hero-card-title">Hi, I'm Thimira | Open to Internships</p>
+                  <p className="hero-card-text">
+                    A motivated developer from Sri Lanka focused on building
+                    modern websites with modern technologies and bug free experiences.
+                  </p>
+                </motion.div>
+              </section>
 
-              </div>
-            }
-          />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
-      </HashRouter>
+              <section className="feature-section">
+                <div className="feature-card">
+                  <h3>Responsive by Design</h3>
+                  <p>
+                    Every page adapts beautifully across desktop, tablet, and mobile.
+                  </p>
+                </div>
+                <div className="feature-card">
+                  <h3>Fast & Clean Code</h3>
+                  <p>
+                    I focus on performance, maintainability, and scalable architecture.
+                  </p>
+                </div>
+                <div className="feature-card">
+                  <h3>Real Internship Ready</h3>
+                  <p>
+                    Professional design, polished interactions, and clear project delivery.
+                  </p>
+                </div>
+              </section>
+            </main>
+          }
+        />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
