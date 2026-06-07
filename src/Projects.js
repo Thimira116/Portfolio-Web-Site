@@ -99,7 +99,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 className="project-card-link"
               >
-                View Repository
+                View
               </a>
             </div>
           </motion.div>
