@@ -7,6 +7,7 @@ import MrCushionImg from "./assets/MrCushion.png";
 import POSImg from "./assets/POS.png";
 import WPOSImg from "./assets/WPOS.png";
 import BusImg from "./assets/Bus.png";
+import EventroImg from "./assets/Eventro.png";
 
 const projects = [
   {
@@ -42,7 +43,7 @@ const projects = [
     description: "A POS system with advance features for grocery shops to manage billing and inventory using PHP & MySQL.",
     link: "https://github.com/Thimira116/Web-Base-POS-System",
     image: WPOSImg,
-    tech: ["PHP", "MySQL", "Bootsrap"],
+    tech: ["PHP", "MySQL", "Bootstrap"],
   },
   {
     title: "Bus Time Table Website (Private)",
@@ -50,6 +51,13 @@ const projects = [
     link: "https://github.com/Thimira116/Bus-Time-Table-Website",
     image: BusImg,
     tech: ["HTML", "PHP", "CSS"],
+  },
+  {
+    title: "Eventro.lk (Group Project)",
+    description: "A group project for managing events and bookings.",
+    link: "https://eventro.lk/",
+    image: EventroImg,
+    tech: ["Bootstrap", "PHP", "CSS"],
   }
 ];
 
