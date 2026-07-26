@@ -33,7 +33,7 @@ function App() {
                     transition={{ delay: 0.1, duration: 0.7 }}
                     className="hero-title"
                   >
-                    Developing reliable web logic and ensuring software quality.
+                    Building polished websites with dependable backend systems.
                   </motion.h1>
 
                   <motion.p
@@ -42,11 +42,10 @@ function App() {
                     transition={{ delay: 0.2, duration: 0.7 }}
                     className="hero-description"
                   >
-                    I combine backend development using PHP and MySQL 
-                    with a strong eye for web design and Quality Assurance. 
-                    I don't just build web applications—I focus on testing them 
-                    thoroughly to deliver clean, bug-free user experiences. 
-                    Actively seeking intern opportunities.
+                    I build data-driven web apps with PHP, MySQL, and React,
+                    while applying QA practices to keep every release clean and reliable.
+                    Open to internships and freelance projects that need strong web logic,
+                    responsive design, and test-ready delivery.
                   </motion.p>
 
                   <div className="hero-actions">
@@ -67,9 +66,42 @@ function App() {
                 >
                   <p className="hero-card-title">Hi, I'm Thimira | Open to Internships</p>
                   <p className="hero-card-text">
-                    A motivated developer from Sri Lanka focused on building
-                    modern websites with modern technologies and bug free experiences.
+                    I create modern, accessible websites that run smoothly on mobile,
+                    connect cleanly to databases, and are built with quality in mind.
                   </p>
+                </motion.div>
+              </section>
+
+              <section className="hero-highlights">
+                <motion.div
+                  className="highlight-card"
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.2, duration: 0.7 }}
+                >
+                  <span>Web Applications</span>
+                  <h3>Responsive UI & layouts</h3>
+                  <p>Designing interfaces that look good and perform well across devices.</p>
+                </motion.div>
+                <motion.div
+                  className="highlight-card"
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3, duration: 0.7 }}
+                >
+                  <span>Backend Systems</span>
+                  <h3>PHP, MySQL, Python</h3>
+                  <p>Building database-backed solutions with reliable business logic and clean data flow.</p>
+                </motion.div>
+                <motion.div
+                  className="highlight-card"
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4, duration: 0.7 }}
+                >
+                  <span>Quality Focus</span>
+                  <h3>QA-ready delivery</h3>
+                  <p>Testing code and user journeys so final products are polished and stable.</p>
                 </motion.div>
               </section>
 

@@ -27,15 +27,30 @@ function About() {
             <h1 className="about-title">Creative Web Developer</h1>
             <p className="about-intro">
               I’m <strong>Thimira Savinda</strong>, and I build modern, responsive websites using
-              PHP, MySQL, and modern technologies. I enjoy designing user-friendly experiences for 
-              internships and real-world projects. Also as a passionate QA I'm tring to give clients 
-              bugs free experience to their projects.
+              PHP, MySQL, and modern web technologies. I enjoy designing user-friendly experiences for
+              internships and real-world projects. As a passionate QA-focused developer, I work to
+              deliver clean, bug-free digital products.
             </p>
+
+            <div className="about-metrics">
+              <div className="about-metric-card">
+                <h3>Web Applications</h3>
+                <p>Responsive frontends with polished UI and smooth interactions.</p>
+              </div>
+              <div className="about-metric-card">
+                <h3>Backend Logic</h3>
+                <p>Database-backed systems built with PHP, MySQL, and Python automation.</p>
+              </div>
+              <div className="about-metric-card">
+                <h3>Quality Focus</h3>
+                <p>Testing and reviewing features to ensure reliable user experiences.</p>
+              </div>
+            </div>
 
             <div className="about-info-grid">
               <div className="about-info-card">
                 <span>Education</span>
-                <p>Sri Lanka Institute Of Advance Technological Education, Galle</p>
+                <p>Sri Lanka Institute of Advanced Technological Education, Galle</p>
               </div>
               <div className="about-info-card">
                 <span>Department</span>
@@ -43,7 +58,7 @@ function About() {
               </div>
               <div className="about-info-card">
                 <span>Qualifications</span>
-                <p>Diploma in English Language and Literature, Aquinas College (2024-2025)</p>
+                <p>Diploma in English Language and Literature, Aquinas College of Higher Studies (2024-2025)</p>
               </div>
             </div>
           </div>

@@ -12,50 +12,64 @@ import EventroImg from "./assets/Eventro.png";
 const projects = [
   {
     title: "Portfolio Website",
-    description: "A personal portfolio website built with React.js and CSS.",
-    link: "https://github.com/Thimira116/Portfolio-Web-Site",
+    description: "React portfolio with motion effects, responsive layout, and polished presentation.",
+    role: "Frontend & UX",
+    github: "https://github.com/Thimira116/Portfolio-Web-Site",
+    live: null,
     image: PortfolioImg,
-    tech: ["React", "CSS", "Design"],
+    tech: ["React", "CSS", "Framer Motion"],
   },
   {
     title: "Travel Management Website",
-    description: "An online travel guide website built using HTML, CSS, JavaScript, Bootstrap, PHP, and MySQL.",
-    link: "https://github.com/Thimira116/Lakvisit-Travelling-Web-Site",
+    description: "A travel guide portal built with HTML, Bootstrap, PHP, and MySQL for booking flows.",
+    role: "Full-stack Web App",
+    github: "https://github.com/Thimira116/Lakvisit-Travelling-Web-Site",
+    live: null,
     image: LakvisitImg,
     tech: ["HTML", "Bootstrap", "PHP"],
   },
   {
     title: "Mr Cushion Website",
-    description: "A booking and feedback website built using HTML, CSS, JavaScript, PHP, and MySQL.",
-    link: "https://github.com/Thimira116/mr_cushion",
+    description: "Booking and feedback website featuring admin workflows and interactive UI.",
+    role: "Frontend + Backend",
+    github: "https://github.com/Thimira116/mr_cushion",
+    live: null,
     image: MrCushionImg,
     tech: ["HTML", "PHP", "MySQL"],
   },
   {
     title: "POS System",
-    description: "A POS system for grocery shops to manage billing and inventory using Python.",
-    link: "https://github.com/Thimira116/POS-System",
+    description: "Grocery billing and inventory system built with Python for desktop usage.",
+    role: "Product Logic",
+    github: "https://github.com/Thimira116/POS-System",
+    live: null,
     image: POSImg,
-    tech: ["Python", "Inventory", "Automation"],
+    tech: ["Python", "Automation", "Inventory"],
   },
   {
-    title: "Web-Base POS System (Private)",
-    description: "A POS system with advance features for grocery shops to manage billing and inventory using PHP & MySQL.",
-    link: "https://github.com/Thimira116/Web-Base-POS-System",
+    title: "Web-Based POS System (Private Repo)",
+    description: "Advanced POS system for grocery stores using PHP and MySQL with admin controls.",
+    role: "Full-stack System",
+    github: "https://github.com/Thimira116/Web-Base-POS-System",
+    live: null,
     image: WPOSImg,
     tech: ["PHP", "MySQL", "Bootstrap"],
   },
   {
-    title: "Bus Time Table Website (Private)",
-    description: "Web-base bus time table website with admin panel for final project of institute.",
-    link: "https://github.com/Thimira116/Bus-Time-Table-Website",
+    title: "Bus Time Table Website (Private Repo)",
+    description: "A final project with admin panel for scheduling bus routes and times.",
+    role: "Project Management",
+    github: "https://github.com/Thimira116/Bus-Time-Table-Website",
+    live: null,
     image: BusImg,
     tech: ["HTML", "PHP", "CSS"],
   },
   {
-    title: "Eventro.lk (Group Project)",
-    description: "A group project for managing events and bookings.",
-    link: "https://eventro.lk/",
+    title: "Eventro.lk",
+    description: "Group event booking site designed for venue management and customer booking.",
+    role: "Group Project",
+    // github: "https://github.com/Thimira116/Eventro.lk",
+    live: "https://eventro.lk/",
     image: EventroImg,
     tech: ["Bootstrap", "PHP", "CSS"],
   }
@@ -73,10 +87,10 @@ function Projects() {
         {projects.map((project, index) => (
           <motion.div
             className="project-card"
-            key={index}
+            key={project.title}
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.6 }}
+            transition={{ delay: index * 0.12, duration: 0.6 }}
           >
             <div className="project-image-wrapper">
               <img
@@ -86,21 +100,38 @@ function Projects() {
               />
             </div>
             <div className="project-content">
-              <h2 className="project-card-title">{project.title}</h2>
+              <div className="project-card-head">
+                <h2 className="project-card-title">{project.title}</h2>
+                <p className="project-role">{project.role}</p>
+              </div>
               <p className="project-card-desc">{project.description}</p>
               <div className="project-tech">
                 {project.tech.map((item) => (
                   <span key={item}>{item}</span>
                 ))}
               </div>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-card-link"
-              >
-                View
-              </a>
+              <div className="project-buttons">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-button"
+                  >
+                    View Code
+                  </a>
+                )}
+                {project.live && (
+                  <a
+                    href={project.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-button secondary-button"
+                  >
+                    Live Demo
+                  </a>
+                )}
+              </div>
             </div>
           </motion.div>
         ))}

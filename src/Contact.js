@@ -9,14 +9,29 @@ const Contact = () => {
         <h1 className="contact-title">Contact Me</h1>
         <p className="contact-text">
           I’m available for internship opportunities and freelance projects.
-          Send a message and let’s talk about ideas, collaboration, or your next website.
+          If you need a reliable website, booking system, or QA-focused developer,
+          send a message and let’s talk about your next project.
         </p>
 
-        <div className="contact-actions">
-          <a
-            href="mailto:thimirapost116@gmail.com"
-            className="primary-button"
-          >
+        <div className="contact-grid">
+          <div className="contact-box">
+            <strong>Email</strong>
+            <a href="mailto:thimirapost116@gmail.com">thimirapost116@gmail.com</a>
+          </div>
+          <div className="contact-box">
+            <strong>Phone</strong>
+            <a href="https://wa.me/+94787842415" target="_blank" rel="noopener noreferrer">
+              WhatsApp Chat
+            </a>
+          </div>
+          <div className="contact-box">
+            <strong>Availability</strong>
+            <p>Open for internships, freelance web work, and collaboration.</p>
+          </div>
+        </div>
+
+        <div className="contact-actions contact-actions-wide">
+          <a href="mailto:thimirapost116@gmail.com" className="primary-button">
             Email Me
           </a>
           <a
@@ -28,6 +43,10 @@ const Contact = () => {
             WhatsApp
           </a>
         </div>
+
+        <p className="contact-note">
+          Want a professional resume link here? Add a resume PDF to the public folder and I can wire it in.
+        </p>
 
         <div className="social-links">
           <a
