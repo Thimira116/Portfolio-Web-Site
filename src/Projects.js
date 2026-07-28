@@ -8,6 +8,8 @@ import POSImg from "./assets/POS.png";
 import WPOSImg from "./assets/WPOS.png";
 import BusImg from "./assets/Bus.png";
 import EventroImg from "./assets/Eventro.png";
+import AirticketImg from "./assets/Airticket.png";
+import ConstructionImg from "./assets/Construction.png";
 
 const projects = [
   {
@@ -72,6 +74,24 @@ const projects = [
     live: "https://eventro.lk/",
     image: EventroImg,
     tech: ["Bootstrap", "PHP", "CSS"],
+  },
+  {
+    title: "Air Ticket Booking System",
+    description: "A ticket booking system with travel destination information.",
+    role: "Ticket Booking System",
+    github: "https://github.com/Thimira116/Sky-Lanka-Air-Ticket-System",
+    live: null,
+    image: AirticketImg,
+    tech: ["HTML", "PHP", "CSS"],
+  },
+  {
+    title: "Project Management System",
+    description: "A system for managing and tracking project progress and resources.",
+    role: "Project Management",
+    github: "https://github.com/Thimira116/Construction_Project_Management_System",
+    live: null,
+    image: ConstructionImg,
+    tech: ["HTML", "PHP", "CSS"],
   }
 ];
 
