@@ -12,15 +12,18 @@ function About() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.9 }}
       >
-        <div className="about-panel">
-          <motion.img
-            src={profilePic}
-            alt="Thimira Savinda"
-            className="about-photo"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ delay: 0.2, duration: 0.7 }}
-          />
+        <div className="about-hero">
+          <div className="about-portrait">
+            <motion.img
+              src={profilePic}
+              alt="Thimira Savinda"
+              className="about-photo"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.2, duration: 0.7 }}
+            />
+            <span className="about-portrait-index" aria-hidden="true">01 / PROFILE</span>
+          </div>
 
           <div className="about-summary">
             <p className="about-label">About Me</p>
@@ -82,6 +85,7 @@ function About() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" />
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github" title="Github" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress" title="WordPress" />
           </div>
         </section>
 

@@ -5,6 +5,7 @@ import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
+import profilePic from "./assets/profile.jpg";
 import "./App.css";
 
 function App() {
@@ -64,11 +65,23 @@ function App() {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.3, duration: 0.7 }}
                 >
-                  <p className="hero-card-title">Hi, I'm Thimira | Open to Internships</p>
+                  <div className="hero-card-profile">
+                    <img src={profilePic} alt="Thimira Savinda" className="hero-card-photo" />
+                    <div className="hero-card-identity">
+                      <span className="hero-card-kicker">A little about me</span>
+                      <p className="hero-card-title">Hi, I'm Thimira</p>
+                    </div>
+                    <span className="availability-badge">Open to internships</span>
+                  </div>
                   <p className="hero-card-text">
                     I create modern, accessible websites that run smoothly on mobile,
                     connect cleanly to databases, and are built with quality in mind.
                   </p>
+                  <div className="hero-card-skills" aria-label="Specialties">
+                    <span>React</span>
+                    <span>PHP & MySQL</span>
+                    <span>Quality focused</span>
+                  </div>
                 </motion.div>
               </section>
 

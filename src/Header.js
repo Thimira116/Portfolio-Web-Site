@@ -25,17 +25,26 @@ function Header() {
   return (
     <header className="portfolio-header">
       <div className="container">
-        <h1 className="logo">
-          Thimira<span> Savinda</span>
-        </h1>
+        <Link to="/" className="logo-link" aria-label="Thimira Savinda home">
+          <span className="logo">
+            Thimira<span> Savinda</span>
+          </span>
+        </Link>
 
-        <div className="menu-icon" onClick={() => setIsOpen(!isOpen)}>
-          <div className={isOpen ? "bar open" : "bar"}></div>
-          <div className={isOpen ? "bar open" : "bar"}></div>
-          <div className={isOpen ? "bar open" : "bar"}></div>
-        </div>
+        <button
+          type="button"
+          className="menu-icon"
+          onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Close navigation" : "Open navigation"}
+          aria-expanded={isOpen}
+          aria-controls="primary-navigation"
+        >
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </button>
 
-        <nav className={isOpen ? "nav-links open" : "nav-links"}>
+        <nav id="primary-navigation" className={isOpen ? "nav-links open" : "nav-links"}>
           <NavLink to="/" end className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setIsOpen(false)}>
             Home
           </NavLink>
