@@ -25,9 +25,10 @@ const Contact = () => {
           <p className="contact-eyebrow">Let’s connect</p>
           <h1 className="contact-title">Contact Me</h1>
           <p className="contact-text">
-            I’m available for internship opportunities and freelance projects.
-            If you need a reliable website, booking system, or QA-focused developer,
-            send a message and let’s talk about your next project.
+            I’m passionate about building modern web applications and full-stack
+            solutions. Whether you need a responsive website, custom web application,
+            or complete business management system, let’s connect and bring your ideas
+            to life.
           </p>
         </div>
 
@@ -43,7 +44,7 @@ const Contact = () => {
             </div>
             <div className="contact-box">
               <strong>Availability</strong>
-              <p>Open for internships, freelance web work, and collaboration.</p>
+              <p>Open to freelance projects, web development opportunities, and collaborations.</p>
             </div>
           </div>
 
@@ -54,7 +55,7 @@ const Contact = () => {
                 href="https://github.com/Thimira116"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="social-icon social-icon-github"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg"
@@ -65,7 +66,7 @@ const Contact = () => {
                 href="https://www.linkedin.com/in/thimira-savinda-279482329?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="social-icon social-icon-linkedin"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg"
@@ -76,14 +77,14 @@ const Contact = () => {
                 href="https://wa.me/+94787842415"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="social-icon"
+                className="social-icon social-icon-whatsapp"
               >
                 <img
                   src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg"
                   alt="WhatsApp"
                 />
               </a>
-              <a href="mailto:thimirapost116@gmail.com" className="social-icon">
+              <a href="mailto:thimirapost116@gmail.com" className="social-icon social-icon-email">
                 <img
                   src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/maildotru.svg"
                   alt="Email"

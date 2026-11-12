@@ -23,7 +23,7 @@ function Header() {
   };
 
   return (
-    <header className="portfolio-header">
+    <header className={isOpen ? "portfolio-header menu-open" : "portfolio-header"}>
       <div className="container">
         <Link to="/" className="logo-link" aria-label="Thimira Savinda home">
           <span className="logo">

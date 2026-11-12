@@ -5,7 +5,7 @@ import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import profilePic from "./assets/profile.jpg";
+import profilePic from "./assets/Profile.png";
 import "./App.css";
 
 function App() {
@@ -34,7 +34,7 @@ function App() {
                     transition={{ delay: 0.1, duration: 0.7 }}
                     className="hero-title"
                   >
-                    Building polished websites with dependable backend systems.
+                    Building modern web applications with seamless user experiences.
                   </motion.h1>
 
                   <motion.p
@@ -43,10 +43,11 @@ function App() {
                     transition={{ delay: 0.2, duration: 0.7 }}
                     className="hero-description"
                   >
-                    I build data-driven web apps with PHP, MySQL, and React,
-                    while applying QA practices to keep every release clean and reliable.
-                    Open to internships and freelance projects that need strong web logic,
-                    responsive design, and test-ready delivery.
+                    I build modern, responsive web applications focused on seamless user
+                     experiences, powerful functionality, and reliable performance.
+                     Passionate about solving real-world problems through clean code,
+                     creative thinking, and innovative solutions. Always exploring new
+                     technologies and turning ideas into meaningful digital experiences.
                   </motion.p>
 
                   <div className="hero-actions">
@@ -71,7 +72,7 @@ function App() {
                       <span className="hero-card-kicker">A little about me</span>
                       <p className="hero-card-title">Hi, I'm Thimira</p>
                     </div>
-                    <span className="availability-badge">Open to internships</span>
+                    <span className="availability-badge">Available for full-stack projects</span>
                   </div>
                   <p className="hero-card-text">
                     I create modern, accessible websites that run smoothly on mobile,
@@ -132,9 +133,10 @@ function App() {
                   </p>
                 </div>
                 <div className="feature-card">
-                  <h3>Real Internship Ready</h3>
+                  <h3>Full-Stack Development</h3>
                   <p>
-                    Professional design, polished interactions, and clear project delivery.
+                    Complete web applications with modern interfaces,
+                    powerful functionality, and reliable backend systems.
                   </p>
                 </div>
               </section>

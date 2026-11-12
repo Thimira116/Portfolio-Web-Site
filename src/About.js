@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./App.css";
-import profilePic from "./assets/profile.jpg";
+import profilePic from "./assets/Profile.png";
 
 function About() {
   return (
@@ -29,10 +29,12 @@ function About() {
             <p className="about-label">About Me</p>
             <h1 className="about-title">Creative Web Developer</h1>
             <p className="about-intro">
-              I’m <strong>Thimira Savinda</strong>, and I build modern, responsive websites using
-              PHP, MySQL, and modern web technologies. I enjoy designing user-friendly experiences for
-              internships and real-world projects. As a passionate QA-focused developer, I work to
-              deliver clean, bug-free digital products.
+              I’m <strong>Thimira Savinda</strong>, a passionate Full Stack Developer
+              focused on building modern, responsive, and user-friendly web
+              applications. I enjoy creating seamless digital experiences, developing
+              practical solutions, and transforming creative ideas into functional
+              products. I value clean code, problem-solving, and delivering reliable
+              applications.
             </p>
 
             <div className="about-metrics">
@@ -42,7 +44,8 @@ function About() {
               </div>
               <div className="about-metric-card">
                 <h3>Backend Logic</h3>
-                <p>Database-backed systems built with PHP, MySQL, and Python automation.</p>
+                <p>Creating intelligent web applications with powerful features and
+                  seamless functionality.</p>
               </div>
               <div className="about-metric-card">
                 <h3>Quality Focus</h3>

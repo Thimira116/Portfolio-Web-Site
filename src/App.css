@@ -1101,7 +1101,7 @@ article {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  margin-left: auto;
+  margin-left: 0;
   padding: 0.58rem 0.78rem;
   border: 1px solid rgba(100, 242, 189, 0.26);
   border-radius: 999px;
@@ -5143,6 +5143,140 @@ body.light-mode .contact-form-hint {
 
 body.light-mode .contact-form-status {
   color: #806000;
+}
+
+@media (min-width: 841px) {
+  body.light-mode .portfolio-header .nav-links {
+    background: transparent;
+  }
+}
+
+body.light-mode .portfolio-header .nav-links a,
+body.light-mode .portfolio-header .nav-links a:hover,
+body.light-mode .portfolio-header .nav-links a.active {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.light-mode .portfolio-header .theme-toggle,
+body.light-mode .portfolio-header .menu-icon {
+  background: transparent;
+  box-shadow: none;
+}
+
+body.light-mode .portfolio-header .theme-toggle {
+  border-color: rgba(41, 77, 107, 0.35);
+  color: #294d6b;
+}
+
+@media (max-width: 840px) {
+  .portfolio-header .container {
+    position: static;
+  }
+
+  .portfolio-header {
+    background: rgba(4, 8, 14, 0.42);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .portfolio-header.menu-open {
+    background: rgba(4, 8, 14, 0.92);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24);
+  }
+
+  .portfolio-header .nav-links {
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: auto;
+    transform: none;
+    background: rgba(4, 8, 14, 0.92);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.24);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  body.light-mode .portfolio-header {
+    background: rgba(245, 249, 252, 0.58);
+  }
+
+  body.light-mode .portfolio-header.menu-open {
+    background: rgba(245, 249, 252, 0.94);
+    box-shadow: 0 12px 40px rgba(33, 67, 97, 0.14);
+  }
+
+  body.light-mode .portfolio-header .nav-links {
+    border-color: rgba(57, 112, 160, 0.18);
+    background: rgba(245, 249, 252, 0.94);
+    box-shadow: 0 12px 40px rgba(33, 67, 97, 0.14);
+  }
+
+  body.light-mode .portfolio-header .nav-links a,
+  body.light-mode .portfolio-header .nav-links a:hover,
+  body.light-mode .portfolio-header .nav-links a.active {
+    color: #294d6b;
+  }
+
+  body.light-mode .portfolio-header .nav-links a.active {
+    color: #755a07;
+  }
+}
+
+body.light-mode .contact-details .contact-box,
+body.light-mode .contact-details .contact-box:nth-child(2),
+body.light-mode .contact-details .contact-box:nth-child(3) {
+  background: transparent;
+}
+
+body.light-mode .contact-socials .social-icon img {
+  border: 0;
+  background: transparent;
+  filter: none;
+}
+
+body.light-mode .contact-socials .social-icon-linkedin img {
+  filter: invert(29%) sepia(93%) saturate(1450%) hue-rotate(179deg) brightness(91%) contrast(96%);
+}
+
+body.light-mode .contact-socials .social-icon-whatsapp img {
+  filter: invert(55%) sepia(63%) saturate(633%) hue-rotate(88deg) brightness(91%) contrast(96%);
+}
+
+body.light-mode .contact-socials .social-icon-email img {
+  filter: invert(41%) sepia(87%) saturate(1760%) hue-rotate(192deg) brightness(90%) contrast(90%);
+}
+
+body:not(.light-mode) .contact-socials .social-icon img {
+  border: 0;
+  background: transparent;
+}
+
+body:not(.light-mode) .contact-socials .social-icon-github img {
+  filter: brightness(0) invert(1);
+}
+
+body:not(.light-mode) .contact-socials .social-icon-linkedin img {
+  filter: invert(29%) sepia(93%) saturate(1450%) hue-rotate(179deg) brightness(91%) contrast(96%);
+}
+
+body:not(.light-mode) .contact-socials .social-icon-whatsapp img {
+  filter: invert(55%) sepia(63%) saturate(633%) hue-rotate(88deg) brightness(91%) contrast(96%);
+}
+
+body:not(.light-mode) .contact-socials .social-icon-email img {
+  filter: invert(41%) sepia(87%) saturate(1760%) hue-rotate(192deg) brightness(90%) contrast(90%);
+}
+
+body.light-mode .availability-badge {
+  border-color: #b08922;
+  background: #fff1c2;
+  color: #664b00;
+}
+
+body.light-mode .availability-badge::before {
+  background: #8a6200;
+  box-shadow: none;
 }
 
 @media (max-width: 620px) {
