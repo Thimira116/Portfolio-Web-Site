@@ -81,7 +81,7 @@ function App() {
                   <div className="hero-card-skills" aria-label="Specialties">
                     <span>React</span>
                     <span>PHP & MySQL</span>
-                    <span>Quality focused</span>
+                    <span>Wordpress</span>
                   </div>
                 </motion.div>
               </section>
@@ -104,7 +104,7 @@ function App() {
                   transition={{ delay: 0.3, duration: 0.7 }}
                 >
                   <span>Backend Systems</span>
-                  <h3>PHP, MySQL, Python</h3>
+                  <h3>PHP, MySQL</h3>
                   <p>Building database-backed solutions with reliable business logic and clean data flow.</p>
                 </motion.div>
                 <motion.div
