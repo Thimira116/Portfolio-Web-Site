@@ -53,21 +53,23 @@ const projects = [
     tech: ["Python", "Automation", "Inventory"],
   },
   {
-    title: "Web-Based POS System (Private Repo)",
+    title: "Web-Based POS System",
     description: "Advanced POS system for grocery stores using PHP and MySQL with admin controls.",
     role: "Full-stack System",
     category: "Personal",
-    github: "https://github.com/Thimira116/Web-Base-POS-System",
+    github: null,
+    sourceCodePrivate: true,
     live: null,
     image: WPOSImg,
     tech: ["PHP", "MySQL", "Bootstrap"],
   },
   {
-    title: "Bus Time Table Website (Private Repo)",
-    description: "A final project with admin panel for scheduling bus routes and times.",
+    title: "Bus Time Table Website",
+    description: "Final academic project with admin panel for scheduling bus routes and times.",
     role: "Project Management",
     category: "Academic",
-    github: "https://github.com/Thimira116/Bus-Time-Table-Website",
+    github: null,
+    sourceCodePrivate: true,
     live: null,
     image: BusImg,
     tech: ["HTML", "PHP", "CSS"],
@@ -159,7 +161,12 @@ function Projects() {
               <div className="project-content">
                 <div className="project-card-head">
                   <h2 className="project-card-title">{project.title}</h2>
-                  <p className="project-role">{project.role}</p>
+                  <div className="project-meta">
+                    <p className="project-role">{project.role}</p>
+                    {project.sourceCodePrivate && (
+                      <p className="project-source-status">Source code: Private</p>
+                    )}
+                  </div>
                 </div>
                 <p className="project-card-desc">{project.description}</p>
                 <div className="project-tech">
@@ -167,28 +174,30 @@ function Projects() {
                     <span key={item}>{item}</span>
                   ))}
                 </div>
-                <div className="project-buttons">
-                  {project.github && (
-                    <a
-                      href={project.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-button"
-                    >
-                      View Code
-                    </a>
-                  )}
-                  {project.live && (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-button secondary-button"
-                    >
-                      Live Demo
-                    </a>
-                  )}
-                </div>
+                {(project.github || project.live) && (
+                  <div className="project-buttons">
+                    {project.github && (
+                      <a
+                        href={project.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-button"
+                      >
+                        View Code
+                      </a>
+                    )}
+                    {project.live && (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="project-button secondary-button"
+                      >
+                        Live Demo
+                      </a>
+                    )}
+                  </div>
+                )}
               </div>
             </motion.div>
           ))

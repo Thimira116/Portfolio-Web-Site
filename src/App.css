@@ -4560,6 +4560,26 @@ body.light-mode .about-skills-section .skills-logos img:hover {
   letter-spacing: 0.06em;
 }
 
+.projects-page .project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.projects-page .project-source-status {
+  width: fit-content;
+  margin: 0;
+  padding: 0.3rem 0.62rem;
+  border: 1px solid rgba(255, 225, 106, 0.3);
+  border-radius: 999px;
+  background: rgba(130, 98, 18, 0.2);
+  color: #ffe16a;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
 .projects-page .project-card-desc {
   margin: 0;
   font-size: 0.92rem;
@@ -4624,6 +4644,12 @@ body.light-mode .projects-page .project-card-title {
 body.light-mode .projects-page .project-role {
   border-color: rgba(48, 126, 194, 0.22);
   background: rgba(54, 130, 190, 0.09);
+}
+
+body.light-mode .projects-page .project-source-status {
+  border-color: rgba(157, 121, 0, 0.26);
+  background: rgba(157, 121, 0, 0.08);
+  color: #806000;
 }
 
 body.light-mode .projects-page .project-tech span {
