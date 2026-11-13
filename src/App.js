@@ -5,7 +5,7 @@ import Header from "./Header";
 import About from "./About";
 import Contact from "./Contact";
 import Projects from "./Projects";
-import profilePic from "./assets/Profile.png";
+import profilePic from "./assets/Profile.webp";
 import "./App.css";
 
 function App() {

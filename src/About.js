@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./App.css";
-import profilePic from "./assets/Profile.png";
+import profilePic from "./assets/Profile.webp";
 
 function About() {
   return (

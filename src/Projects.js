@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import "./App.css";
-import PortfolioImg from "./assets/Portfolio.png";
-import LakvisitImg from "./assets/Lakvisit.png";
-import MrCushionImg from "./assets/MrCushion.png";
-import POSImg from "./assets/POS.png";
-import WPOSImg from "./assets/WPOS.png";
-import BusImg from "./assets/Bus.png";
-import EventroImg from "./assets/Eventro.png";
-import AirticketImg from "./assets/Airticket.png";
-import ConstructionImg from "./assets/Construction.png";
+import PortfolioImg from "./assets/Portfolio.webp";
+import LakvisitImg from "./assets/Lakvisit.webp";
+// import MrCushionImg from "./assets/MrCushion.webp";
+import POSImg from "./assets/POS.webp";
+import WPOSImg from "./assets/WPOS.webp";
+import BusImg from "./assets/Bus.webp";
+// import EventroImg from "./assets/Eventro.png";
+import AirticketImg from "./assets/Airticket.webp";
+import ConstructionImg from "./assets/Construction.webp";
 
 const projects = [
   {
@@ -32,16 +32,16 @@ const projects = [
     image: LakvisitImg,
     tech: ["HTML", "Bootstrap", "PHP"],
   },
-  {
-    title: "Mr Cushion Website",
-    description: "Booking and feedback website featuring admin workflows and interactive UI.",
-    role: "Frontend + Backend",
-    category: "Personal",
-    github: "https://github.com/Thimira116/mr_cushion",
-    live: null,
-    image: MrCushionImg,
-    tech: ["HTML", "PHP", "MySQL"],
-  },
+  // {
+  //   title: "Mr Cushion Website",
+  //   description: "Booking and feedback website featuring admin workflows and interactive UI.",
+  //   role: "Frontend + Backend",
+  //   category: "Personal",
+  //   github: "https://github.com/Thimira116/mr_cushion",
+  //   live: null,
+  //   image: MrCushionImg,
+  //   tech: ["HTML", "PHP", "MySQL"],
+  // },
   {
     title: "POS System",
     description: "Grocery billing and inventory system built with Python for desktop usage.",
@@ -72,16 +72,16 @@ const projects = [
     image: BusImg,
     tech: ["HTML", "PHP", "CSS"],
   },
-  {
-    title: "Eventro.lk",
-    description: "Group event booking site designed for venue management and customer booking.",
-    role: "Group Project",
-    category: "Academic",
-    // github: "https://github.com/Thimira116/Eventro.lk",
-    live: "https://eventro.lk/",
-    image: EventroImg,
-    tech: ["Bootstrap", "PHP", "CSS"],
-  },
+  // {
+  //   title: "Eventro.lk",
+  //   description: "Group event booking site designed for venue management and customer booking.",
+  //   role: "Group Project",
+  //   category: "Academic",
+  // github: "https://github.com/Thimira116/Eventro.lk",
+  //   live: "https://eventro.lk/",
+  //   image: EventroImg,
+  //   tech: ["Bootstrap", "PHP", "CSS"],
+  // },
   {
     title: "Air Ticket Booking System",
     description: "A ticket booking system with travel destination information.",
