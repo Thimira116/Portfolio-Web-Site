@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio-Web-Site/static/css/main.a589033c.css",
-    "main.js": "/Portfolio-Web-Site/static/js/main.8f8e3ded.js",
+    "main.css": "/Portfolio-Web-Site/static/css/main.6d84c7d5.css",
+    "main.js": "/Portfolio-Web-Site/static/js/main.4f1b86b0.js",
     "static/js/453.f635793e.chunk.js": "/Portfolio-Web-Site/static/js/453.f635793e.chunk.js",
     "static/media/Lakvisit.webp": "/Portfolio-Web-Site/static/media/Lakvisit.9e57e1330e026822fb6e.webp",
     "static/media/Portfolio.webp": "/Portfolio-Web-Site/static/media/Portfolio.95decd30ef49bf09b8b5.webp",
@@ -12,12 +12,12 @@
     "static/media/POS.webp": "/Portfolio-Web-Site/static/media/POS.d96a0f08b19184e2994e.webp",
     "static/media/Construction.webp": "/Portfolio-Web-Site/static/media/Construction.6b13968d39ac7d3b87f9.webp",
     "index.html": "/Portfolio-Web-Site/index.html",
-    "main.a589033c.css.map": "/Portfolio-Web-Site/static/css/main.a589033c.css.map",
-    "main.8f8e3ded.js.map": "/Portfolio-Web-Site/static/js/main.8f8e3ded.js.map",
+    "main.6d84c7d5.css.map": "/Portfolio-Web-Site/static/css/main.6d84c7d5.css.map",
+    "main.4f1b86b0.js.map": "/Portfolio-Web-Site/static/js/main.4f1b86b0.js.map",
     "453.f635793e.chunk.js.map": "/Portfolio-Web-Site/static/js/453.f635793e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a589033c.css",
-    "static/js/main.8f8e3ded.js"
+    "static/css/main.6d84c7d5.css",
+    "static/js/main.4f1b86b0.js"
   ]
 }
