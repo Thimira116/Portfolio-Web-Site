@@ -4514,7 +4514,7 @@ body.light-mode .about-skills-section .skills-logos img:hover {
 .projects-page .project-image-wrapper {
   position: relative;
   height: auto;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 1 / 1;
   background: #081522;
 }
 
