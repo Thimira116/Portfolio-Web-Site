@@ -57,6 +57,14 @@ function Header() {
           <NavLink to="/contact" className={({ isActive }) => (isActive ? "active" : "")} onClick={() => setIsOpen(false)}>
             Contact
           </NavLink>
+          <a
+            className="cv-download"
+            href={`${process.env.PUBLIC_URL}/CV.pdf`}
+            download="Thimira Savinda CV.pdf"
+            onClick={() => setIsOpen(false)}
+          >
+            CV
+          </a>
           <button type="button" className="theme-toggle" onClick={toggleTheme}>
             {theme === "dark" ? "Light" : "Dark"}
           </button>

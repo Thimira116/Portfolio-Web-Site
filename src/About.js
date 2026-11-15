@@ -37,22 +37,6 @@ function About() {
               applications.
             </p>
 
-            <div className="about-metrics">
-              <div className="about-metric-card">
-                <h3>Web Applications</h3>
-                <p>Responsive frontends with polished UI and smooth interactions.</p>
-              </div>
-              <div className="about-metric-card">
-                <h3>Backend Logic</h3>
-                <p>Creating intelligent web applications with powerful features and
-                  seamless functionality.</p>
-              </div>
-              <div className="about-metric-card">
-                <h3>Quality Focus</h3>
-                <p>Testing and reviewing features to ensure reliable user experiences.</p>
-              </div>
-            </div>
-
             <div className="about-info-grid">
               <div className="about-info-card">
                 <span>Education</span>
